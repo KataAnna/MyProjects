@@ -1,0 +1,12 @@
+﻿@model IEnumerable<TestTaskWithMVC.Models.Programmer>
+@{
+    ViewBag.Title = "Companies Workers";
+}
+<a asp-action="Create">Добавить модель</a>
+<table class="table">
+    <tr><td>First Name</td><td>Last Name</td><td>Email Address</td></tr>
+    @foreach (var item in Model)
+    {
+        <tr><td>@item.FirstName</td><td>@item.LastName</td><td>@item.Email</td></tr>
+    }
+</table>

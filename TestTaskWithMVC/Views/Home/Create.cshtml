@@ -1,0 +1,21 @@
+﻿@model TestTaskWithMVC.Models.Programmer
+@{
+    ViewBag.Title = "Comanys Projects";
+}
+<form asp-action="create" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="FirstName" class="control-label">First Name</label>
+        <input type="text" asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" class="control-label">Last Name</label>
+        <input type="text" asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label">Email address</label>
+        <input type="number" asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Send" class="btn btn-default" />
+    </div>
+</form>
